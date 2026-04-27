@@ -8,7 +8,7 @@ namespace LogExtractorLibrary
     {
         private const string ConfigFileName = "config.json";
         private static readonly string _configFilePath;
-        private static string _gameRootPath = "";
+        private static string _gameRootPath = "C:\\Users\\f0578\\AppData\\Roaming\\.tlauncher\\legacy\\Minecraft\\Create Cog and Circuit New 1.21";
 
         static GamePathProvider()
         {
@@ -33,6 +33,8 @@ namespace LogExtractorLibrary
         {
             return Path.Combine(_gameRootPath, "logs", "kubejs", "server.log");
         }
+
+
 
         public static string GetIconsPath()
         {
